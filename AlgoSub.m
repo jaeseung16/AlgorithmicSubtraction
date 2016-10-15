@@ -8,10 +8,15 @@ function [ ysub, ybase ] = AlgoSub( x, y, max_height, max_iter )
 % Jul 8, 2015
 % made as a function by Jae-Seung Lee
 
+% Input parameters
 % x: frequency offsets
 % y: spectral intensities
 % max_height: the maximum height of the subtraceted spectrum
-% max_iter: maximum number of iteration
+% max_iter: the number of iterations
+
+% Outputs
+% ybase: the baseline to subtract
+% ysub: the subtracted spectrum
 
 x=x(:);
 y=y(:);
@@ -42,7 +47,7 @@ for m=1:max_iter
     
     M3 = M3 + c*dM;
     
-    waitbar(m/max_iter)
+    waitbar(m/max_iter) % Comment out this line for speed.
     
     % The updated path should be between the original and shifted spectra.
     ind = find( M3 > y );
