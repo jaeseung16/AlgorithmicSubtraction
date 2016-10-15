@@ -13,13 +13,13 @@ Jul 8, 2015 - made as a function by Jae-Seung Lee
 Oct 15, 2016 - uploaded to https://github.com/jaeseung16/AlgorithmicSubtraction/
 
 Input parameters
-x: frequency offsets
-y: spectral intensities
-max_height: the maximum height of the subtraceted spectrum
-max_iter: the number of iterations
+* x: frequency offsets
+* y: spectral intensities
+* max_height: the maximum height of the subtraceted spectrum
+* max_iter: the number of iterations
 
 Outputs
-ybase: the baseline to subtract
-ysub: the subtracted spectrum
+* ybase: the baseline to subtract
+* ysub: the subtracted spectrum
 
 * Comment out the line "waitbar(m/max_iter)" for speed.
