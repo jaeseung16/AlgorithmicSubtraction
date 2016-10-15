@@ -22,4 +22,4 @@ Outputs
 * ybase: the baseline to subtract
 * ysub: the subtracted spectrum
 
-* Comment out the line "waitbar(m/max_iter)" for speed.
+Comment out the line "waitbar(m/max_iter)" for speed.
