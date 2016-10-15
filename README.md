@@ -6,24 +6,20 @@ The matlab function file "AlgoSub.m" implements the algorithm introduced in Ref.
 
 [ ysub, ybase ] = AlgoSub( x, y, max_height, max_iter )
 
-% Algorithmic subtraction of high peaks in NMR spectra
-%
-% Dec 29, 2005
-%
-% written by Jae-Seung Lee and A. K. Khitrin
-%
-% Jul 8, 2015
-% made as a function by Jae-Seung Lee
-%
-% Oct 15, 2016
-% uploaded to https://github.com/jaeseung16/AlgorithmicSubtraction/
+Algorithmic subtraction of high peaks in NMR spectra
 
-% x: frequency offsets
-% y: spectral intensities
-% max_height: the maximum height of the subtraceted spectrum
-% max_iter: the number of iterations
-% 
-% ybase: the baseline to subtract
-% ysub: the subtracted spectrum
-%
-% Comment out the line "waitbar(m/max_iter)" for speed.
+Dec 29, 2005 - written by Jae-Seung Lee and A. K. Khitrin
+Jul 8, 2015 - made as a function by Jae-Seung Lee
+Oct 15, 2016 - uploaded to https://github.com/jaeseung16/AlgorithmicSubtraction/
+
+Input parameters
+x: frequency offsets
+y: spectral intensities
+max_height: the maximum height of the subtraceted spectrum
+max_iter: the number of iterations
+
+Outputs
+ybase: the baseline to subtract
+ysub: the subtracted spectrum
+
+* Comment out the line "waitbar(m/max_iter)" for speed.
